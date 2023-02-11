@@ -8,18 +8,11 @@
 
 		<link rel="stylesheet" href="css/notosanskr.css">
 		<link rel="stylesheet" href="css/reset.css"> 
-    <link rel="stylesheet" href="css/project.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/project.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
-		<script src="js/script.js"></script>
-    <script src="js/jquery.scrollTo.min.js"></script> 
-    <!--  <script src="jquery-1.10.2.min.js"></script>-->
-    <script src="js/bootstrap.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>	
-	</head>
+			
+        </head>
 	
     <body>  
     <div id="wrap">
@@ -285,12 +278,12 @@
 				</div>
 				<div id="overlay">
 					<div class="inner">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/ktdqlQ1zhg4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/ktdqlQ1zhg4" frameborder="0" allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						<a href="" class="close">X</a>
 					</div>
 				</div>
 		</section>
-	</div><!-- scene6 -->
+	</div><!-- scene6 autoplay;-->
 	
 	
 	<footer id="footer">
@@ -320,6 +313,13 @@
  </div><!-- wrap --> 
 
 </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>  
+<script src="js/script.js"></script>
+<!-- <script src="js/jquery.scrollTo.min.js"></script>  -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
 
 <script type="text/javascript">    
        
@@ -334,7 +334,7 @@
         var song = new Audio();
         var currentSong = 0;    
         
-        window.onload = playSong;   
+        // window.onload = playSong;   
         
         function playSong(){
             
@@ -512,57 +512,58 @@
 
       //scroll fade animation//
 
-      $(window).scroll( function(){
-        $('.sec-tit').each( function(i){
+    //   $(window).scroll( function(){
+    //     $('.sec-tit').each( function(i){
             
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+    //         var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+    //         var bottom_of_window = $(window).scrollTop() + $(window).height();
             
-            if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1','margin-left':'0px'},1000);
-            }
+    //         if( bottom_of_window > bottom_of_element ){
+    //             $(this).animate({'opacity':'1','margin-left':'0px'},1000);
+    //         }
             
-        }); 
-    });
-       $(window).scroll( function(){
-        $('.desc').each( function(i){
+    //     }); 
+    // });
+    //    $(window).scroll( function(){
+    //     $('.desc').each( function(i){
             
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+    //         var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+    //         var bottom_of_window = $(window).scrollTop() + $(window).height();
             
-            if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1','margin-left':'0px'},800);
-            }
+    //         if( bottom_of_window > bottom_of_element ){
+    //             $(this).animate({'opacity':'1','margin-left':'0px'},800);
+    //         }
             
-        }); 
-    });
+    //     }); 
+    // });
 
-      $(window).scroll( function(){
-        $('.sec-tit2').each( function(i){
+    //   $(window).scroll( function(){
+    //     $('.sec-tit2').each( function(i){
             
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+    //         var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+    //         var bottom_of_window = $(window).scrollTop() + $(window).height();
             
-            if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1','margin-left':'0px'},800);
-            }
+    //         if( bottom_of_window > bottom_of_element ){
+    //             $(this).animate({'opacity':'1','margin-left':'0px'},800);
+    //         }
             
-        }); 
-    });
+    //     }); 
+    // });
 
-      $(window).scroll( function(){
-        $('.desc2').each( function(i){
+    //   $(window).scroll( function(){
+    //     $('.desc2').each( function(i){
             
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+    //         var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+    //         var bottom_of_window = $(window).scrollTop() + $(window).height();
             
-            if( bottom_of_window > bottom_of_element ){
-                $(this).animate({'opacity':'1','margin-left':'0px'},1000);
-            }
+    //         if( bottom_of_window > bottom_of_element ){
+    //             $(this).animate({'opacity':'1','margin-left':'0px'},1000);
+    //         }
             
-        }); 
-    });
-    </script>
+    //     }); 
+    // });
+   
+   </script>
 </html>
 
 
